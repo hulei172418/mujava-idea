@@ -1,0 +1,45 @@
+SEVERE: [OJException] main/java/org/apache/commons/lang3/AnnotationUtils.java####mujava.OpenJavaException:  can't generate parse tree
+SEVERE: [OJException] main/java/org/apache/commons/lang3/AppendableJoiner.java####mujava.OpenJavaException:  can't generate parse tree
+SEVERE: [OJException] main/java/org/apache/commons/lang3/ArchUtils.java####mujava.OpenJavaException:  can't generate parse tree
+SEVERE: [OJException] main/java/org/apache/commons/lang3/ArraySorter.java####mujava.OpenJavaException:  can't generate parse tree
+SEVERE: [OJException] main/java/org/apache/commons/lang3/ArrayUtils.java####mujava.OpenJavaException:  can't generate parse tree
+SEVERE: [OJException] main/java/org/apache/commons/lang3/BooleanUtils.java####mujava.OpenJavaException:  can't generate parse tree
+SEVERE: [OJException] main/java/org/apache/commons/lang3/CharEncoding.java####mujava.OpenJavaException:  can't generate parse tree
+SEVERE: [OJException] main/java/org/apache/commons/lang3/CharSequenceUtils.java####mujava.OpenJavaException:  can't generate parse tree
+SEVERE: [OJException] main/java/org/apache/commons/lang3/CharSet.java####mujava.OpenJavaException:  can't generate parse tree
+SEVERE: [OJException] main/java/org/apache/commons/lang3/CharSetUtils.java####mujava.OpenJavaException:  can't generate parse tree
+SEVERE: [OJException] main/java/org/apache/commons/lang3/CharUtils.java####mujava.OpenJavaException:  can't generate parse tree
+SEVERE: [OJException] main/java/org/apache/commons/lang3/ClassLoaderUtils.java####mujava.OpenJavaException:  can't generate parse tree
+SEVERE: [OJException] main/java/org/apache/commons/lang3/ClassPathUtils.java####mujava.OpenJavaException:  can't generate parse tree
+SEVERE: [OJException] main/java/org/apache/commons/lang3/ClassUtils.java####mujava.OpenJavaException:  can't generate parse tree
+SEVERE: [OJException] main/java/org/apache/commons/lang3/Conversion.java####mujava.OpenJavaException:  can't generate parse tree
+SEVERE: [OJException] main/java/org/apache/commons/lang3/EnumUtils.java####mujava.OpenJavaException:  can't generate parse tree
+SEVERE: [OJException] main/java/org/apache/commons/lang3/Functions.java####mujava.OpenJavaException:  can't generate parse tree
+SEVERE: [Error] main/java/org/apache/commons/lang3/JavaVersion.java####java.lang.Error: Missing return statement in function
+SEVERE: [OJException] main/java/org/apache/commons/lang3/LocaleUtils.java####mujava.OpenJavaException:  can't generate parse tree
+SEVERE: [OJException] main/java/org/apache/commons/lang3/ObjectUtils.java####mujava.OpenJavaException:  can't generate parse tree
+SEVERE: [OJException] main/java/org/apache/commons/lang3/RandomStringUtils.java####mujava.OpenJavaException:  can't generate parse tree
+SEVERE: [OJException] main/java/org/apache/commons/lang3/RandomUtils.java####mujava.OpenJavaException:  can't generate parse tree
+SEVERE: [Error] main/java/org/apache/commons/lang3/Range.java####java.lang.Error: Missing return statement in function
+SEVERE: [OJException] main/java/org/apache/commons/lang3/RegExUtils.java####mujava.OpenJavaException:  can't generate parse tree
+SEVERE: [OJException] main/java/org/apache/commons/lang3/RuntimeEnvironment.java####mujava.OpenJavaException:  can't generate parse tree
+SEVERE: [OJException] main/java/org/apache/commons/lang3/SerializationUtils.java####mujava.OpenJavaException:  can't generate parse tree
+SEVERE: [OJException] main/java/org/apache/commons/lang3/Streams.java####mujava.OpenJavaException:  can't generate parse tree
+SEVERE: [OJException] main/java/org/apache/commons/lang3/StringEscapeUtils.java####mujava.OpenJavaException:  can't generate parse tree
+SEVERE: [OJException] main/java/org/apache/commons/lang3/StringUtils.java####mujava.OpenJavaException:  can't generate parse tree
+SEVERE: [OJException] main/java/org/apache/commons/lang3/SystemProperties.java####mujava.OpenJavaException:  can't generate parse tree
+SEVERE: [OJException] main/java/org/apache/commons/lang3/SystemUtils.java####mujava.OpenJavaException:  can't generate parse tree
+SEVERE: [OJException] main/java/org/apache/commons/lang3/ThreadUtils.java####mujava.OpenJavaException:  can't generate parse tree
+SEVERE: [Exception] main/java/org/apache/commons/lang3/Validate.java####java.lang.NullPointerException
+SEVERE: [OJException] main/java/org/apache/commons/lang3/builder/Builder.java####mujava.OpenJavaException:  can't generate parse tree
+SEVERE: [OJException] main/java/org/apache/commons/lang3/builder/CompareToBuilder.java####mujava.OpenJavaException:  can't generate parse tree
+SEVERE: [OJException] main/java/org/apache/commons/lang3/builder/Diffable.java####mujava.OpenJavaException:  can't generate parse tree
+SEVERE: [OJException] main/java/org/apache/commons/lang3/builder/DiffBuilder.java####mujava.OpenJavaException:  can't generate parse tree
+SEVERE: [OJException] main/java/org/apache/commons/lang3/builder/DiffExclude.java####mujava.OpenJavaException:  can't generate parse tree
+SEVERE: [OJException] main/java/org/apache/commons/lang3/builder/DiffResult.java####mujava.OpenJavaException:  can't generate parse tree
+SEVERE: [OJException] main/java/org/apache/commons/lang3/builder/EqualsBuilder.java####mujava.OpenJavaException:  can't generate parse tree
+SEVERE: [OJException] main/java/org/apache/commons/lang3/builder/EqualsExclude.java####mujava.OpenJavaException:  can't generate parse tree
+SEVERE: [OJException] main/java/org/apache/commons/lang3/builder/HashCodeBuilder.java####mujava.OpenJavaException:  can't generate parse tree
+SEVERE: [OJException] main/java/org/apache/commons/lang3/builder/HashCodeExclude.java####mujava.OpenJavaException:  can't generate parse tree
+SEVERE: [OJException] main/java/org/apache/commons/lang3/builder/ReflectionDiffBuilder.java####mujava.OpenJavaException:  can't generate parse tree
+SEVERE: [OJException] main/java/org/apache/commons/lang3/builder/ReflectionToStringBuilder.java####mujava.OpenJavaException:  can't generate parse tree
