@@ -374,7 +374,7 @@ public class genmutes {
 				}
 								
 				
-//				File muTotalFile = new File(MutationSystem.MUTANT_PATH,"mutation_log");
+//				File muTotalFile = new File(MutationSystem.MUTANT_PATH,"mutation_log.txt");
 //				String strLine;
 //		         LineNumberReader lReader = new LineNumberReader(new FileReader(muTotalFile));
 //		         int line = 0;

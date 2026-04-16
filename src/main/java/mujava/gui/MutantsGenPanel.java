@@ -438,8 +438,9 @@ public class MutantsGenPanel extends JPanel
                   class_name = class_name + temp.charAt(j);
                }
             }
-           
-            int class_type = MutationSystem.getClassType(class_name);
+
+            String className2 = temp.substring(Math.max(temp.lastIndexOf('/'), temp.lastIndexOf('\\')) + 1);
+            int class_type = MutationSystem.getClassType(className2);
             
 			if (class_type == MutationSystem.NORMAL)
 			{   // do nothing?

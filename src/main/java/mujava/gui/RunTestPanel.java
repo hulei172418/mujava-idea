@@ -636,7 +636,7 @@ public class RunTestPanel extends JPanel implements ActionListener
       {
          Vector v = new Vector();
          //setMutantPath();
-         File f = new File(MutationSystem.TRADITIONAL_MUTANT_PATH, "method_list");
+         File f = new File(MutationSystem.TRADITIONAL_MUTANT_PATH, "method_list.txt");
          FileReader r = new FileReader(f);
          BufferedReader reader = new BufferedReader(r);
          String methodSignature = reader.readLine();
@@ -712,7 +712,7 @@ public class RunTestPanel extends JPanel implements ActionListener
       methodCB.addItem("All method");
       try
       {
-         File f = new File(MutationSystem.TRADITIONAL_MUTANT_PATH, "method_list");
+         File f = new File(MutationSystem.TRADITIONAL_MUTANT_PATH, "method_list.txt");
          FileReader r = new FileReader(f);
          BufferedReader reader = new BufferedReader(r);
          String str = reader.readLine();

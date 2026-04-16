@@ -18,6 +18,8 @@
 package mujava.test;
 
 import java.util.Vector;
+import java.util.LinkedHashMap;
+import java.util.Map;
 
 /**
  * <p>Description: </p>
@@ -28,16 +30,25 @@ import java.util.Vector;
 
 public class TestResult
 {
-    //all mutants in a class  	
+	// all mutants in a class
 	public Vector mutants = new Vector();
-	//killed mutants in a class
+
+	// killed mutants in a class
 	public Vector killed_mutants = new Vector();
-	//live mutants in a class
+
+	// live mutants in a class
 	public Vector live_mutants = new Vector();
-	//mutation score
-	public int mutant_score = 0;
-  
-  public void setMutants(){
-	  mutants = new Vector();	
-  }
+
+	// mutation score
+	public double mutant_score = 0.0;
+
+	// test -> mutants
+	public Map<String, String> test_results = new LinkedHashMap<String, String>();
+
+	// mutant -> tests
+	public Map<String, String> mutant_results = new LinkedHashMap<String, String>();
+
+	public void setMutants(){
+		mutants = new Vector();
+	}
 }

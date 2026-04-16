@@ -474,13 +474,13 @@ public abstract class MutantsViewerPanel  extends JPanel
       }
    }
   
-  /** Return log for the mutant <i> mutant_name </i> from the log file "mutation_log" <br>
+  /** Return log for the mutant <i> mutant_name </i> from the log file "mutation_log.txt" <br>
    *  @return log for the mutant (if no log found, NULL is returned.)*/
    String getMutantLog(String mutant_name)
    {
       try
       {
-         File myFile = new File(MutationSystem.MUTANT_PATH, "mutation_log");
+         File myFile = new File(MutationSystem.MUTANT_PATH, "mutation_log.txt");
          String strLine;
          LineNumberReader lReader = new LineNumberReader(new FileReader(myFile));
          while ((strLine=lReader.readLine()) != null)
@@ -507,7 +507,7 @@ public abstract class MutantsViewerPanel  extends JPanel
    {
       try 
       {
-         File myFile = new File(MutationSystem.MUTANT_PATH, "mutation_log");
+         File myFile = new File(MutationSystem.MUTANT_PATH, "mutation_log.txt");
          String strLine;
          LineNumberReader lReader = new LineNumberReader(new FileReader(myFile));
 

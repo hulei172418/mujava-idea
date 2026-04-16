@@ -34,7 +34,7 @@ import java.util.logging.Logger;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
-import static mujava.LocalJarFinder.*;
+import static mujava.util.LocalJarFinder.*;
 
 /**
  * <p>
@@ -225,7 +225,10 @@ public class MutantsGenerator {
     }
 
     static void run(String file_path){
-        MutationSystem.setJMutationStructure(System.getProperty("user.dir") + "/../testset/"+file_path);
+        // String home_path = System.getProperty("user.dir") + "/../"+"Programs/"+file_path+"/"+file_path;
+        // String home_path = System.getProperty("user.dir") + "/../"+"Programs/"+"commons-math-4.0-beta1/"+file_path;  // commons-math-4.0-beta1专属
+        String home_path = System.getProperty("user.dir") + "/../"+"Programs/"+file_path;
+        MutationSystem.setJMutationStructure(home_path);
         Vector file_names = MutationSystem.getNewTragetFiles();
         for (int i=0;i< file_names.size();i++){
             String file_name = (String) file_names.get(i);
@@ -245,8 +248,7 @@ public class MutantsGenerator {
             try {
                 setMutationSystemPathFor(file_name);
 
-                String targetDirectory = MutationSystem.SYSTEM_HOME + "/" + "target/";
-                MutationSystem.JAR_PATH = getJarFilesAsString(targetDirectory);
+                MutationSystem.JAR_PATH = buildProjectClasspath(MutationSystem.SYSTEM_HOME);
 
                 File original_file = new File(MutationSystem.SRC_PATH, file_name);
                 AllMutantsGenerator genEngine;
@@ -305,18 +307,21 @@ public class MutantsGenerator {
     }
 
     public static void main(String[] args) {
-        String s = null;
+        String s = "";
+        String parentDir = "";
+        String artId = "";
         try {
-            String maven = MutationSystem.SYSTEM_HOME + "/mujava.config";
-            String jsonResult = getFileDir(maven);
+            String config = MutationSystem.SYSTEM_HOME + "/mujava.config";
+            String jsonResult = getFileDir(config, "MAVEN_REPOSITORY_HOME");
+            MutationSystem.MAVEN_HOME = getMaven(config, "MAVEN_HOME");
             assert jsonResult != null;
 
             String logFile = "logs/statistic.log";
             setupLogger(logFile);
 
             JSONArray jsonArray = new JSONArray(jsonResult);
-            for (int i = 3; i < 4; i++) {
-            // for (int i = 3; i < jsonArray.length(); i++) {
+            for (int i = 2; i < 3; i++) {
+            // for (int i = 0; i < jsonArray.length(); i++) {
                 JSONObject dependency = jsonArray.getJSONObject(i);
                 String groupId = dependency.getString("groupId");
                 String artifactId = dependency.getString("artifactId");
@@ -324,15 +329,29 @@ public class MutantsGenerator {
                 String jarPath = dependency.optString("jarPath", "[未找到]");
 
                 if(artifactId.contains("commons-math4")){
-                    s = "commons-math"+"-"+version+"/"+artifactId.replace("math4", "math");
+                    parentDir = "commons-math"+"-"+version;
+                    artId = artifactId.replace("math4", "math");
                 }else if (artifactId.contains("commons-numbers")){
-                    s = "commons-numbers"+"-"+version+"/"+artifactId;
+                    parentDir = "commons-numbers"+"-"+version;
+                    artId = artifactId;
                 }
                 else {
-                    s = artifactId+"-"+version;
+                    parentDir = artifactId+"-"+version;
+                    artId = "";
+                }
+                if ("".equals(artId)) {
+                    s = parentDir+"/"+parentDir;
+                }
+                else{
+                    s = parentDir+"/"+parentDir+"/"+artId;
                 }
 
+                s = "oot/oot";
+                // jarPath = "E:/PHD/testJava/testJavaMu/target/testJava-1.0.0.jar";
+                //
                 MutationSystem.JAR_PATH = jarPath;
+                // String home_path = System.getProperty("user.dir") + "/../"+"Programs/"+s;
+                // System.out.println(home_path);
                 run(s);
             }
         }catch (Exception e){

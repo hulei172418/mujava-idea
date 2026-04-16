@@ -101,7 +101,7 @@ public class TraditionalMutantsGeneratorCLI extends TraditionalMutantsGenerator 
          {
             Debug.println("* Compiling traditional mutants into bytecode");
             String original_tm_path = MutationSystem.TRADITIONAL_MUTANT_PATH;
-            File f = new File(original_tm_path, "method_list");
+            File f = new File(original_tm_path, "method_list.txt");
             FileReader r = new FileReader(f);
             BufferedReader reader = new BufferedReader(r);
             String str = reader.readLine();
@@ -143,7 +143,7 @@ public class TraditionalMutantsGeneratorCLI extends TraditionalMutantsGenerator 
                try
                {
                   // ∞¢ ∏ﬁº“µÂ signatureø° «ÿ¥Á«œ¥¬ µ∑∫≈‰∏Æ∏¶ ∏∏µÁ¥Ÿ.
-                  File f = new File(MutationSystem.MUTANT_PATH, "method_list");
+                  File f = new File(MutationSystem.MUTANT_PATH, "method_list.txt");
                   FileOutputStream fout = new FileOutputStream(f);
                   PrintWriter out = new PrintWriter(fout);
                   mutant_op = new CreateDirForEachMethod(file_env, cdecl, comp_unit, out);
