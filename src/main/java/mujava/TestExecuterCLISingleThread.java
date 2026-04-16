@@ -337,7 +337,7 @@ public class TestExecuterCLISingleThread extends TestExecuterCLI  {
 			try {
 				// setMutantPath();
 				// computeOriginalTestResults();
-				File f = new File(MutationSystem.TRADITIONAL_MUTANT_PATH, "method_list");
+				File f = new File(MutationSystem.TRADITIONAL_MUTANT_PATH, "method_list.txt");
 				FileReader r = new FileReader(f);
 				BufferedReader reader = new BufferedReader(r);
 				String readSignature = reader.readLine();
